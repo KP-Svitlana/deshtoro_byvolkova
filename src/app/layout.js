@@ -1,7 +1,9 @@
+import "./globals.css";
+
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Poppins, Marck_Script } from "next/font/google";
-import "./globals.css";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
