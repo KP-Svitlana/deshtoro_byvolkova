@@ -3,14 +3,14 @@
   box-sizing: border-box;
 
   @include mq(mobile) {
-    width: 1440px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  @include mq(desktop) {
     width: 375px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  @include mq(desktop) {
+    width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
