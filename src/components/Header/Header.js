@@ -8,7 +8,7 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header>
+    <header className="container">
       <h1>Header</h1>
       <nav>
         <ul>
