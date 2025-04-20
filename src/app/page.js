@@ -1,6 +1,10 @@
 import Image from "next/image";
-
+import { About } from "@/components/About";
 
 export default function Home() {
-  return <h1>Hello,Home</h1>;
+  return (
+    <main>
+      <About />
+    </main>
+  );
 }

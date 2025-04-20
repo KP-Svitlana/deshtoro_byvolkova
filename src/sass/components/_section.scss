@@ -1,0 +1,15 @@
+.section {
+  @include mq(mobile) {
+    margin-bottom: 56px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.section_title {
+  @include font(400, 24, 150%, 0);
+  color: $black;
+  text-transform: uppercase;
+}

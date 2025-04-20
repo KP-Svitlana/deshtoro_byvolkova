@@ -65,4 +65,24 @@ body {
     padding-left: 80px;
     padding-right: 80px;
   }
+}
+
+@media screen and (min-width: 375px) {
+  .section {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+.section_title {
+  font-weight: 400;
+  font-size: 24;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #181818;
+  text-transform: uppercase;
 }/*# sourceMappingURL=globals.css.map */
