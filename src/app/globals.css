@@ -119,16 +119,32 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media screen and (max-width: 767.98px) {
   .about_item:first-child {
     font-size: 32px;
     font-weight: 300;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+@media screen and (max-width: 767.98px) {
   .about_item:last-child {
     font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .about_phptolist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .about_phptolist {
+    flex-direction: row;
+    gap: 24px;
   }
 }
 

@@ -5,40 +5,46 @@
   @include mq(desktop) {
     align-items: flex-start;
   }
-
 }
 
 .about_item {
-    @include mq(mobile) {
-        @include font(300, 44px, 150%, 0);
-      }
-    
-      @include mq(desktop) {
-        @include font(300, 80px, 120%, 0);
-      }
-    
-      color: $black;
-
-}
-
-
-.about_item:first-child {
-  @include mq(tablet-only) {
-    font-size: 32px;
-    font-weight: 300;
-
+  @include mq(mobile) {
+    @include font(300, 44px, 150%, 0);
   }
 
+  @include mq(desktop) {
+    @include font(300, 80px, 120%, 0);
+  }
+
+  color: $black;
+}
+
+.about_item:first-child {
+  @include mq(mobile-only) {
+    font-size: 32px;
+    font-weight: 300;
+  }
 }
 
 .about_item:last-child {
-  @include mq(tablet-only) {
+  @include mq(mobile-only) {
     font-size: 48px;
+  }
+}
+
+.about_phptolist {
+@include mq(mobile) {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    gap: 40px;
+}
+
+  @include mq(desktop) {
+    flex-direction: row;
+    gap: 24px;
   }
  
 }
-
-
 
 .about_text {
   @include font(400, 16px, 150%, 0);
