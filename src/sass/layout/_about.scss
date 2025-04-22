@@ -20,7 +20,7 @@
 }
 
 .about_item:nth-child(1) {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     font-size: 32px;
     font-weight: 300;
     margin-right: 90px;
@@ -38,7 +38,7 @@
 }
 
 .about_item:nth-child(3) {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     font-size: 48px;
   }
   @include mq(desktop) {
