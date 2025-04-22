@@ -46,11 +46,15 @@
   }
 }
 
-.about_phptolist {
+.about_photolist {
   @include mq(mobile) {
     @include flex(flex, center, center);
     flex-direction: column;
     gap: 40px;
+  }
+
+  .photolist_img {
+    border-radius: 16px;
   }
 
   @include mq(desktop) {

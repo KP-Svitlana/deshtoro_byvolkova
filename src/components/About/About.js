@@ -17,12 +17,12 @@ export const About = () => {
           <p>Преміальність</p>
         </li>
       </ul>
-      <ul className="about_phptolist">
-        <li>
-          <Image src={about1} alt="штора" width={410} height={528} />
+      <ul className="about_photolist">
+        <li className="photolist_item">
+          <Image src={about1} alt="штора" width={410} height={528} className="photolist_img"/>
         </li>
-        <li>
-          <Image src={about2} alt="тканина" width={410} height={312} />
+        <li className="photolist_item">
+          <Image src={about2} alt="тканина" width={410} height={312} className="photolist_img"/>
         </li>
       </ul>
 
