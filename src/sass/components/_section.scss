@@ -9,7 +9,7 @@
 }
 
 .section_title {
-  @include font(400, 24, 150%, 0);
+  @include font(400, 24px, 150%, 0);
   color: $black;
   text-transform: uppercase;
 }
