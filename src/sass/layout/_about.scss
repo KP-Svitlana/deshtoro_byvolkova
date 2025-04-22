@@ -19,31 +19,44 @@
   color: $black;
 }
 
-.about_item:first-child {
-  @include mq(mobile-only) {
+.about_item:nth-child(1) {
+  @include mq(mobile) {
     font-size: 32px;
     font-weight: 300;
+    margin-right: 90px;
   }
 }
 
-.about_item:last-child {
-  @include mq(mobile-only) {
+.about_item:nth-child(2) {
+  @include mq(mobile) {
+    margin-right: 116px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 108px;
+  }
+}
+
+.about_item:nth-child(3) {
+  @include mq(mobile) {
     font-size: 48px;
+  }
+  @include mq(desktop) {
+    margin-left: 217px;
   }
 }
 
 .about_phptolist {
-@include mq(mobile) {
+  @include mq(mobile) {
     @include flex(flex, center, center);
     flex-direction: column;
     gap: 40px;
-}
+  }
 
   @include mq(desktop) {
     flex-direction: row;
     gap: 24px;
   }
- 
 }
 
 .about_text {
