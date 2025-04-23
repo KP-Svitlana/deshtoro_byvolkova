@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from 'next/link'
+
 import about1 from "../../accets/img/about1_x3_desktop.jpg";
 import about2 from "../../accets/img/about2_x3_desktop.jpg";
 
@@ -32,6 +34,7 @@ export const About = () => {
         інтер’єр та підкреслюють ваш смак. Від елегантної класики до сучасного
         мінімалізму — ми допоможемо обрати найкраще рішення саме для вас.
       </p>
+      <Link href="/about" className="about_link">Дізнатися більше</Link>
     </section>
   );
 };
