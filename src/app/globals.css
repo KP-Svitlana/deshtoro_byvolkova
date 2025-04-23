@@ -97,6 +97,23 @@ body {
   }
 }
 
+.button {
+  height: 44px;
+  color: #232D3F;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.button:hover {
+  font-size: 600;
+}
+
 .about_list {
   display: flex;
   justify-content: center;
@@ -184,13 +201,4 @@ body {
   line-height: 150%;
   letter-spacing: 0;
   color: #181818;
-}
-
-.about_link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  color: #232D3F;
 }/*# sourceMappingURL=globals.css.map */

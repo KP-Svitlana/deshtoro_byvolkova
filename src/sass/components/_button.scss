@@ -1,0 +1,15 @@
+.button {
+  height: 44px;
+//   width: 128px;
+
+  color: $primary_black;
+  @include font(500, 16px, 150%, 0);
+  text-transform: uppercase;
+
+  @include flex(flex, center, center);
+  gap: 8px;
+
+  &:hover {
+    font-size: 600;
+  }
+}
