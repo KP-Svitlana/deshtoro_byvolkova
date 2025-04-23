@@ -6,7 +6,7 @@ import about2 from "../../accets/img/about2_x3_desktop.jpg";
 
 export const About = () => {
   return (
-    <section className="section container">
+    <section className="section container section_about">
       <h1 className="section_title">про нас</h1>
       <ul className="about_list">
         <li className="about_item">
@@ -24,7 +24,6 @@ export const About = () => {
           <Image
             src={about1}
             alt="штора"
-            width={410}
             height={528}
             className="photolist_img"
           />
@@ -33,21 +32,21 @@ export const About = () => {
           <Image
             src={about2}
             alt="тканина"
-            width={410}
             height={312}
             className="photolist_img"
           />
+          <div className="about_textwrapp">
+            <p className="about_text">
+              Де ШТОРИ — це студія штор, де поєднуються стиль, якість та
+              індивідуальний підхід. Ми створюємо штори, які ідеально доповнюють
+              ваш інтер’єр та підкреслюють ваш смак. Від елегантної класики до
+              сучасного мінімалізму — ми допоможемо обрати найкраще рішення саме
+              для вас.
+            </p>
+            <Button text="Дізнатися більше" isErrow={true} path="about" />
+          </div>
         </li>
       </ul>
-
-      <p className="about_text">
-        Де ШТОРИ — це студія штор, де поєднуються стиль, якість та
-        індивідуальний підхід. Ми створюємо штори, які ідеально доповнюють ваш
-        інтер’єр та підкреслюють ваш смак. Від елегантної класики до сучасного
-        мінімалізму — ми допоможемо обрати найкраще рішення саме для вас.
-      </p>
-
-      <Button text="Дізнатися більше" isErrow={true} path="about"/>
     </section>
   );
 };
