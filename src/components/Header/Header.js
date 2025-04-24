@@ -3,13 +3,16 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { navLinks } from "@/constants";
+import Image from "next/image";
+
+import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 
 export const Header = () => {
   const pathname = usePathname();
 
   return (
     <header className="container">
-      <h1>Header</h1>
+      <Image src={logo_desktop} alt="logo" />
       <nav>
         <ul>
           {navLinks.map((link) => {
