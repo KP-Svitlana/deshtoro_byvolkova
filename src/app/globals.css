@@ -99,7 +99,6 @@ body {
 
 .button {
   height: 44px;
-  width: 100%;
   color: #232D3F;
   font-weight: 500;
   font-size: 16px;
@@ -121,7 +120,7 @@ body {
   }
 }
 .button:hover {
-  font-size: 600;
+  font-weight: 600;
 }
 
 .section_about {
@@ -224,12 +223,19 @@ body {
   }
 }
 
+@media screen and (min-width: 375px) {
+  .photolist_item:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 @media (min-width: 1440px) {
   .photolist_item:last-child {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 24px;
+    flex-direction: row;
     margin-top: 360px;
   }
 }
@@ -248,13 +254,15 @@ body {
   }
 }
 
+.about_textwrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 @media (min-width: 1440px) {
   .about_textwrapp {
-    display: flex;
     justify-content: center;
     align-items: flex-end;
-    flex-direction: column;
-    gap: 24px;
   }
 }
 
