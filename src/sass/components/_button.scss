@@ -1,0 +1,20 @@
+.button {
+  height: 44px;
+
+  color: $primary_black;
+  @include font(500, 16px, 150%, 0);
+  text-transform: uppercase;
+
+  @include mq(mobile) {
+    @include flex(flex, space-between, center);
+  }
+
+  @include mq(desktop) {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &:hover {
+    font-weight: 600;
+  }
+}

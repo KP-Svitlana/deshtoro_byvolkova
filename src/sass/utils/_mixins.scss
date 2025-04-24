@@ -36,13 +36,7 @@
       @media (min-width: $desktop) {
         @content;
       }
-    } @else if $range == retina {
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        @content;
-      }
-    } @else if $range == notDesktop {
+    }  @else if $range == notDesktop {
       @media screen and (max-width: #{$desktop - 0.02}) {
         @content;
       }
