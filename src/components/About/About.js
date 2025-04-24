@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Button } from "../Button";
 
-import about1 from "../../accets/img/about1_x3_desktop.jpg";
-import about2 from "../../accets/img/about2_x3_desktop.jpg";
+import about1 from "@/accets/img/about1_x3_desktop.jpg";
+import about2 from "@/accets/img/about2_x3_desktop.jpg";
 
 export const About = () => {
   return (
@@ -25,7 +25,9 @@ export const About = () => {
             src={about1}
             alt="штора"
             height={528}
+            
             className="photolist_img"
+            priority={true}
           />
         </li>
         <li className="photolist_item">
@@ -33,6 +35,7 @@ export const About = () => {
             src={about2}
             alt="тканина"
             height={312}
+            
             className="photolist_img"
           />
           <div className="about_textwrapp">

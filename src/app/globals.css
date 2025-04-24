@@ -246,11 +246,13 @@ body {
 @media screen and (min-width: 375px) {
   .photolist_img {
     width: 343px;
+    height: auto;
   }
 }
 @media (min-width: 1440px) {
   .photolist_img {
     width: 410px;
+    height: auto;
   }
 }
 
