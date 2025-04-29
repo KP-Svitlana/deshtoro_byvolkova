@@ -4,10 +4,18 @@
     -moz-appearance: none;
 
     background-color: transparent;
-    border:  o solid transparent;
+    border:  none;
     padding: 8px;
-
+    padding-right: 20px;
+    
     @include font(400, 16px, 150%, 0);
     color: $white;
+
+    background-image: url("/public/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+
+    cursor: pointer;
 }
 
