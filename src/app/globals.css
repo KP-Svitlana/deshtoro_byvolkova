@@ -142,15 +142,18 @@ body {
   gap: 194px;
 }
 
-.header_linkslist {
+.nav_list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
 
-.navLink {
+.nav_item {
   padding: 10px 16px;
+}
+
+.navLink {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -160,13 +163,19 @@ body {
 }
 
 .navLink--active {
-  padding: 10px 16px;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
   color: #F5F7FA;
+}
+
+.header_wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .section_about {

@@ -1,0 +1,13 @@
+.langSwitcher_list {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: transparent;
+    border:  o solid transparent;
+    padding: 8px;
+
+    @include font(400, 16px, 150%, 0);
+    color: $white;
+}
+
