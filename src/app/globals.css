@@ -98,6 +98,17 @@ body {
 }
 
 .button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #F5F7FA;
+  padding: 10px 16px;
+  border: 1px solid #E5E0D6;
+  border-radius: 4px;
+}
+
+.button_link {
   height: 44px;
   color: #232D3F;
   font-weight: 500;
@@ -107,19 +118,19 @@ body {
   text-transform: uppercase;
 }
 @media screen and (min-width: 375px) {
-  .button {
+  .button_link {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 @media (min-width: 1440px) {
-  .button {
+  .button_link {
     justify-content: center;
     gap: 8px;
   }
 }
-.button:hover {
+.button_link:hover {
   font-weight: 600;
 }
 
