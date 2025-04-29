@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { navLinks } from "@/constants";
 import Image from "next/image";
+import { Button } from "../Button";
 
 import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 
@@ -11,10 +12,10 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="container">
+    <header className="container header">
       <Image src={logo_desktop} alt="logo" />
       <nav>
-        <ul>
+        <ul className="header_linkslist">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -32,6 +33,7 @@ export const Header = () => {
           })}
         </ul>
       </nav>
+      <Button text={"Зв'язатися"} isErrow={false} type={"button"}/>
     </header>
   );
 };

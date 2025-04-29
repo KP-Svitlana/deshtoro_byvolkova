@@ -1,0 +1,25 @@
+.header {
+  background-color: grey;
+
+  @include flex(flex, center, center);
+  gap: 194px;
+}
+
+.header_linkslist {
+  @include flex(flex, center, center);
+  gap: 16px;
+}
+
+.navLink {
+  padding: 10px 16px;
+  @include font(500, 16px, 150%, 0);
+  text-transform: uppercase;
+  color: $white;
+}
+
+.navLink--active {
+    padding: 10px 16px;
+    @include font(600, 16px, 150%, 0);
+    text-transform: uppercase;
+    color: $white;
+}
