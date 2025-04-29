@@ -11,7 +11,7 @@ export const Button = ({ text, isErrow, type, path = "/" }) => {
           {isErrow && <Image src={errowSvg} alt="Errow" />}
         </button>
       ) : (
-        <Link href={path} className="button">
+        <Link href={path} className="button_link">
           {text}
           {isErrow && <Image src={errowSvg} alt="Errow" />}
         </Link>
