@@ -12,27 +12,6 @@
   gap: 194px;
 }
 
-.nav_list {
-  @include flex(flex, center, center);
-  gap: 16px;
-}
-
-.nav_item {
-  padding: 10px 16px;
-}
-
-.navLink {
-  @include font(500, 16px, 150%, 0);
-  text-transform: uppercase;
-  color: $white;
-}
-
-.navLink--active {
-  @include font(600, 16px, 150%, 0);
-  text-transform: uppercase;
-  color: $white;
-}
-
 .header_wrapp {
   @include flex(flex, center, center);
   gap: 16px;
