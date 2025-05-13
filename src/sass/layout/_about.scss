@@ -1,6 +1,6 @@
 .section_about {
   @include mq(mobile) {
-    @include flex(flex, center, start);
+    @include flex(flex, center, flex-start);
     flex-direction: column;
     gap: 24px;
   }

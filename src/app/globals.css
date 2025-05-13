@@ -134,8 +134,36 @@ body {
   font-weight: 600;
 }
 
+.langSwitcher_list {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #F5F7FA;
+  background-image: url("/public/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+
 .header {
-  background-color: grey;
+  background-color: #292D3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 194px;
+}
+
+.header--home {
+  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +213,7 @@ body {
   .section_about {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 24px;
   }

@@ -11,9 +11,10 @@ import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 
 export const Header = () => {
   const pathname = usePathname();
-
+  const isHome = pathname === "/";
+ 
   return (
-    <header className="container header">
+    <header className={isHome ? "container header--home": "container header"}>
       <Image src={logo_desktop} alt="logo" />
       <nav>
         <ul className="nav_list">
