@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Poppins, Marck_Script } from "next/font/google";
+import { Poppins, Marck_Script, Open_Sans } from "next/font/google";
 
 
 const poppins = Poppins({
@@ -16,7 +16,15 @@ const marckScript = Marck_Script({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
+  variable: "--font-markScript",
 });
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+  variable: "--font-openSans",
+})
 
 export const metadata = {
   title: "De SHTORO",
