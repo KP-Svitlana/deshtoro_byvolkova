@@ -1,4 +1,7 @@
+import Image from "next/image";
 import { Navigate } from "../Navigate";
+
+import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 
 export const Footer = () => {
   return (
@@ -13,12 +16,13 @@ export const Footer = () => {
           з вами, щоб відповісти на всі ваші запитання та допомогти створити
           унікальне текстильне оформлення вашого інтер’єру.
         </p>
-        <form>
-          <label >Номер телефону</label>
-          <input id="tel" type="tel" name="tel"></input>
-          <input type="submit" value="Надіслати"/>
+        <form className="footer_form">
+          <label className="form_label">Номер телефону</label>
+          <input className="form_input" id="tel" type="tel" name="tel" placeholder="Введіть номер"></input>
+          <input className="form_btn" type="submit" value="Надіслати"/>
         </form>
       </div>
+      <Image src={logo_desktop} alt="logo" />
       <Navigate />
     </footer>
   );

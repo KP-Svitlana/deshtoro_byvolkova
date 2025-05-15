@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
- 
 
   @include mq(mobile) {
     padding-top: 24px;
@@ -25,12 +23,12 @@
 .footer_title {
   @include font(700, 20px, 100%, 0);
   text-transform: uppercase;
-  font-family: --font-openSans;
+  font-family: var(--font-openSans);
   text-align: center;
 
   @include mq(desktop) {
     font-size: 30px;
-   text-align: left;
+    text-align: left;
   }
 }
 
@@ -39,6 +37,8 @@
 }
 
 .footer_wrap {
+  width: 100%;
+
   @include mq(mobile) {
     @include flex(flex, center, center);
     flex-direction: column;
@@ -49,4 +49,33 @@
     justify-content: space-between;
     gap: 120px;
   }
+}
+
+.footer_form {
+  @include flex(flex, center, center);
+  
+}
+
+.form_label {
+  @include font(400, 14px, 150%, 0);
+  color: $white;
+}
+
+.form_input {
+  width: 209px;
+  height: 44px;
+  padding: 10px 16px;
+  border: 1px, solid, $white;
+  border-radius: 4px 0px 0px 4px;
+
+  @include font(400, 16px, 150%, 0);
+  color: $disabled;
+}
+
+.form_btn{
+   width: 111px;
+  height: 44px;
+  padding: 10px 16px;
+  border: 1px, solid, $white;
+  border-radius: 0px 4px 4px 0px;
 }
