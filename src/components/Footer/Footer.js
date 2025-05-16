@@ -8,7 +8,9 @@ export const Footer = () => {
   return (
     <footer className="footer container">
       <div className="footer_wrap">
-        <h2 className="footer_title">Оформимо ваш інтер’єр із бездоганним стилем</h2>
+        <h2 className="footer_title">
+          Оформимо ваш інтер’єр із бездоганним стилем
+        </h2>
         <h2 className="footer_title">+38 067 939 06 77</h2>
       </div>
       <div className="footer_wrap">
@@ -19,13 +21,21 @@ export const Footer = () => {
         </p>
         <form className="footer_form">
           <label className="form_label">Номер телефону</label>
-          <input className="form_input" id="tel" type="tel" name="tel" placeholder="Введіть номер"></input>
-          <input className="form_btn" type="submit" value="Надіслати"/>
+          <input
+            className="form_input"
+            id="tel"
+            type="tel"
+            name="tel"
+            placeholder="Введіть номер"
+          ></input>
+          <input className="form_btn" type="submit" value="Надіслати" />
         </form>
       </div>
-      <Image src={logo_desktop} alt="logo" />
-      <Navigate />
-      <SocMediaLinks/>
+      <div className="footer_navWrap">
+        <Image src={logo_desktop} alt="logo"className="footer_logo"/>
+        <Navigate />
+        <SocMediaLinks />
+      </div>
     </footer>
   );
 };

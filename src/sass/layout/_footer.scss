@@ -51,19 +51,35 @@
   }
 }
 
+.footer_navWrap {
+  width: 100%;
+
+  @include mq(mobile) {
+    @include flex(flex, flex-start, center);
+    flex-direction: column;
+  }
+  @include mq(desktop) {
+    flex-direction: row;
+  }
+}
+
 .footer_form {
-  @include flex(flex, center, center);
-  
+  @include flex(flex, center, flex-end);
+  position: relative;
+  height: 69px;
 }
 
 .form_label {
   @include font(400, 14px, 150%, 0);
   color: $white;
+
+  position: absolute;
+  top:0;
+  left: 0;
 }
 
 .form_input {
-  width: 209px;
-  height: 44px;
+  
   padding: 10px 16px;
   border: 1px, solid, $white;
   border-radius: 4px 0px 0px 4px;
@@ -72,10 +88,19 @@
   color: $disabled;
 }
 
-.form_btn{
-   width: 111px;
+.form_btn {
+  width: 111px;
   height: 44px;
   padding: 10px 16px;
+
+  background-color: transparent;
+  color: $light_biege;
+  @include font(400, 16px, 150%, 0);
+
   border: 1px, solid, $white;
   border-radius: 0px 4px 4px 0px;
+}
+
+.footer_logo {
+  margin-right: 18px;
 }
