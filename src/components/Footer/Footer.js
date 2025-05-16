@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Form from 'next/form'
 import { Navigate } from "../Navigate";
 import { SocMediaLinks } from "../SocMediaLinks";
 
@@ -19,7 +20,7 @@ export const Footer = () => {
           з вами, щоб відповісти на всі ваші запитання та допомогти створити
           унікальне текстильне оформлення вашого інтер’єру.
         </p>
-        <form className="footer_form">
+        <Form className="footer_form" >
           <label className="form_label">Номер телефону</label>
           <input
             className="form_input"
@@ -29,7 +30,7 @@ export const Footer = () => {
             placeholder="Введіть номер"
           ></input>
           <input className="form_btn" type="submit" value="Надіслати" />
-        </form>
+        </Form>
       </div>
       <div className="footer_navWrap">
         <Image src={logo_desktop} alt="logo"className="footer_logo"/>

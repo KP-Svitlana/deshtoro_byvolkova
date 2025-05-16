@@ -21,7 +21,7 @@
 }
 
 .footer_title {
-  @include font(700, 20px, 100%, 0);
+  @include font(700, 20px, 150%, 0);
   text-transform: uppercase;
   font-family: var(--font-openSans);
   text-align: center;
@@ -29,11 +29,21 @@
   @include mq(desktop) {
     font-size: 30px;
     text-align: left;
+    line-height: 100%;
   }
 }
 
 .footer_text {
-  @include font(400, 16px, 150%, 0);
+
+
+  @include mq(mobile) {
+    @include font(400, 16px, 150%, 0);
+    text-align: center;
+  }
+
+  @include mq(desktop) {
+    text-align: start;
+  }
 }
 
 .footer_wrap {
@@ -42,6 +52,7 @@
   @include mq(mobile) {
     @include flex(flex, center, center);
     flex-direction: column;
+   
     gap: 16px;
   }
   @include mq(desktop) {
@@ -67,6 +78,8 @@
   @include flex(flex, center, flex-end);
   position: relative;
   height: 69px;
+
+  
 }
 
 .form_label {
@@ -74,12 +87,11 @@
   color: $white;
 
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 }
 
 .form_input {
-  
   padding: 10px 16px;
   border: 1px, solid, $white;
   border-radius: 4px 0px 0px 4px;

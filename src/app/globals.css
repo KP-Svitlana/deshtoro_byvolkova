@@ -411,7 +411,7 @@ body {
 .footer_title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
   font-family: var(--font-openSans);
@@ -421,14 +421,23 @@ body {
   .footer_title {
     font-size: 30px;
     text-align: left;
+    line-height: 100%;
   }
 }
 
-.footer_text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0;
+@media screen and (min-width: 375px) {
+  .footer_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .footer_text {
+    text-align: start;
+  }
 }
 
 .footer_wrap {
