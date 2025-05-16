@@ -94,12 +94,12 @@
 .photolist_img {
   @include mq(mobile) {
     width: 343px;
-    height:auto;
+    height: auto;
   }
 
   @include mq(desktop) {
     width: 410px;
-    height:auto;
+    height: auto;
   }
   border-radius: 16px;
 }

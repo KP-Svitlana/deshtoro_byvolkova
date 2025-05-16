@@ -1,3 +1,3 @@
-import { navLinks } from "./path";
+import { navLinks, socLinks } from "./path";
 
-export { navLinks };
+export { navLinks, socLinks };
