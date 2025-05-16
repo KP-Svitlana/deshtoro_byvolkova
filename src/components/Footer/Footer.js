@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Navigate } from "../Navigate";
+import { SocMediaLinks } from "../SocMediaLinks";
 
 import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 
@@ -24,6 +25,7 @@ export const Footer = () => {
       </div>
       <Image src={logo_desktop} alt="logo" />
       <Navigate />
+      <SocMediaLinks/>
     </footer>
   );
 };
