@@ -1,0 +1,15 @@
+.desktop_img {
+    @include mq(mobile) {
+        display: none;
+    }
+
+    @include mq(desktop) {
+        display: block;
+    }
+}
+
+.mobile_img {
+     @include mq(desktop) {
+        display: none;
+    }
+}
