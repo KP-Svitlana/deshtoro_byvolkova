@@ -9,7 +9,7 @@ position: relative;
 
   @include mq(mobile) {
    
-     padding-top: 112px;
+    padding-top: 112px;
     padding-bottom: 24px;
     flex-direction: column;
     gap: 32px;
@@ -117,7 +117,7 @@ position: relative;
 @include mq(mobile) {
   position: absolute;
   top:24px;
-  left:104px;
+  left:120px;
 }
 
   @include mq(desktop) {

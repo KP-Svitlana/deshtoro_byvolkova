@@ -543,7 +543,7 @@ body {
   .footer_logo {
     position: absolute;
     top: 24px;
-    left: 104px;
+    left: 120px;
   }
 }
 @media (min-width: 1440px) {
