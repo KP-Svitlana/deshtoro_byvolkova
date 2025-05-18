@@ -209,6 +209,23 @@ body {
   }
 }
 
+@media screen and (min-width: 375px) {
+  .desktop_img {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .desktop_img {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mobile_img {
+    display: none;
+  }
+}
+
 .header {
   background-color: #292D3F;
   display: flex;

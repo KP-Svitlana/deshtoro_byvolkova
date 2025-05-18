@@ -1,9 +1,10 @@
-import Image from "next/image";
-import Form from 'next/form'
+import Form from "next/form";
 import { Navigate } from "../Navigate";
 import { SocMediaLinks } from "../SocMediaLinks";
+import { LogoSwitcherImg } from "../LogoSwitcherImg";
 
 import logo_desktop from "@/accets/svg/logo_header_desktop.png";
+import logo_mobile from "@/accets/svg/logo_header_mobile.png";
 
 export const Footer = () => {
   return (
@@ -20,7 +21,7 @@ export const Footer = () => {
           з вами, щоб відповісти на всі ваші запитання та допомогти створити
           унікальне текстильне оформлення вашого інтер’єру.
         </p>
-        <Form className="footer_form" >
+        <Form className="footer_form">
           <label className="form_label">Номер телефону</label>
           <input
             className="form_input"
@@ -33,7 +34,11 @@ export const Footer = () => {
         </Form>
       </div>
       <div className="footer_navWrap">
-        <Image src={logo_desktop} alt="logo"className="footer_logo"/>
+        <LogoSwitcherImg
+          logo_desktop={logo_desktop}
+          logo_mobile={logo_mobile}
+          className={"footer_logo"}
+        />
         <Navigate />
         <SocMediaLinks />
       </div>
