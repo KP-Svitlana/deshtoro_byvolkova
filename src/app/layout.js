@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${openSans.variable}`}
+        className={`${poppins.className} ${openSans.variable} ${marckScript.variable}`}
       >
         <Header />
         <main>{children}</main>
