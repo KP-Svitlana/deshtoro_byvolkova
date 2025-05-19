@@ -402,6 +402,22 @@ body {
   color: #181818;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero_title {
+  color: #F5F7FA;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-family: var(--font-markScript);
+}
+
 .footer {
   position: relative;
   background-color: #292D3F;

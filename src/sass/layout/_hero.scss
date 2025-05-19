@@ -1,0 +1,10 @@
+.hero {
+    @include flex(flex, center, center);
+    flex-direction: column;
+}
+
+.hero_title {
+    color: $white;
+    @include font (400, 56px, 120%, 0);
+    font-family: var(--font-markScript);
+}
