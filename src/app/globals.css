@@ -407,6 +407,29 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 375px) {
+  .hero {
+    width: 375px;
+    height: 812px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    width: 1440px;
+    height: 1024px;
+  }
+}
+
+.hero_titleWrap {
+  position: absolute;
+  top: 517px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero_title {
