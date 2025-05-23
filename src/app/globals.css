@@ -235,7 +235,6 @@ body {
 }
 
 .header--home {
-  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,6 +402,9 @@ body {
 }
 
 .hero {
+  position: absolute;
+  top: -80px;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,19 +415,39 @@ body {
 @media screen and (min-width: 375px) {
   .hero {
     width: 375px;
-    height: 812px;
   }
 }
 @media (min-width: 1440px) {
   .hero {
     width: 1440px;
-    height: 1024px;
   }
+}
+
+.hero_videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero_videoWrapper video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero_videoWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(24, 24, 24, 0.4784313725);
+  pointer-events: none;
 }
 
 .hero_titleWrap {
   position: absolute;
-  top: 517px;
+  top: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
