@@ -6,8 +6,6 @@
 }
 
 .header--home {
-  background-color: gray;
-
   @include flex(flex, center, center);
   gap: 194px;
 }
