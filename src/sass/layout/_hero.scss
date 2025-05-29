@@ -1,6 +1,6 @@
 .hero {
   position: absolute;
-  top: -96px;
+ 
   z-index: -1;
 
   @include flex(flex, center, center);
@@ -11,10 +11,14 @@
 
   @include mq(mobile) {
     width: 375px;
+
+    top: -56px;
   }
 
   @include mq(desktop) {
     width: 1440px;
+
+     top: -96px;
   }
 }
 

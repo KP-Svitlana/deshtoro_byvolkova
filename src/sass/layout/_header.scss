@@ -1,4 +1,7 @@
 .header {
+  @include mq(mobile) {
+    @include flex(flex, space-between, center);
+  }
   @include mq(desktop) {
     padding: 8px 80px 8px 80px;
 
@@ -11,9 +14,39 @@
 }
 
 .header_wrapp {
+
+  @include mq(mobile) {
+    display: none;
+  }
+
   @include mq(desktop) {
     @include flex(flex, center, center);
     gap: 194px;
     margin-left: 194px;
   }
 }
+
+.mobileIcon_wrapp {
+  @include flex(flex, center, center);
+  gap: 16px;
+
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.phone_icon {
+  border: 1px solid $light_biege;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+// .header_nav {
+//   @include mq(mobile) {
+//     display: none;
+//   }
+
+//   @include mq(desktop) {
+//     display: flex;
+//   }
+// }

@@ -1,9 +1,16 @@
 .button {
-  @include font(400, 16px, 150%,0); 
-  color: $white;
-  padding: 10px 16px;
-  border:  1px solid $light_biege;
-  border-radius: 4px;
+  @include mq(mobile) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    @include font(400, 16px, 150%, 0);
+    color: $white;
+    padding: 10px 16px;
+    border: 1px solid $light_biege;
+    border-radius: 4px;
+  }
 }
 
 .button_link {
