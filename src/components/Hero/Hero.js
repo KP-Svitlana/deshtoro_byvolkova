@@ -11,7 +11,6 @@ export const Hero = () => {
   return (
     <section className="hero">
       <div className="hero_videoWrapper">
-        {" "}
         <Video
           src={myVideo}
           autoplay
@@ -19,6 +18,7 @@ export const Hero = () => {
           loop
           playsInLine
           controls={false}
+          preload="auto"
           className={"hero_video"}
         />
       </div>
