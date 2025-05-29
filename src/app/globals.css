@@ -97,15 +97,23 @@ body {
   }
 }
 
-.button {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0;
-  color: #F5F7FA;
-  padding: 10px 16px;
-  border: 1px solid #E5E0D6;
-  border-radius: 4px;
+@media screen and (min-width: 375px) {
+  .button {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .button {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #F5F7FA;
+    padding: 10px 16px;
+    border: 1px solid #E5E0D6;
+    border-radius: 4px;
+  }
 }
 
 .button_link {
@@ -226,26 +234,57 @@ body {
   }
 }
 
-.header {
+@media screen and (min-width: 375px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    padding: 8px 80px 8px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header--color {
   background-color: #292D3F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 194px;
 }
 
-.header--home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 194px;
+@media screen and (min-width: 375px) {
+  .header_wrapp {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .header_wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 194px;
+    margin-left: 194px;
+  }
 }
 
-.header_wrapp {
+.mobileIcon_wrapp {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+@media (min-width: 1440px) {
+  .mobileIcon_wrapp {
+    display: none;
+  }
+}
+
+.phone_icon {
+  border: 1px solid #E5E0D6;
+  border-radius: 4px;
+  padding: 8px;
 }
 
 .section_about {
@@ -403,7 +442,6 @@ body {
 
 .hero {
   position: absolute;
-  top: -80px;
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -415,11 +453,13 @@ body {
 @media screen and (min-width: 375px) {
   .hero {
     width: 375px;
+    top: -56px;
   }
 }
 @media (min-width: 1440px) {
   .hero {
     width: 1440px;
+    top: -96px;
   }
 }
 

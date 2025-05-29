@@ -4,11 +4,11 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { navLinks } from "@/constants";
 
-export const Navigate = () => {
+export const Navigate = ({className}) => {
   const pathname = usePathname();
   
   return (
-    <nav>
+    <nav className={className}>
       <ul className="nav_list">
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
