@@ -1,16 +1,19 @@
 .header {
-  background-color: $primary;
+  @include mq(desktop) {
+    padding: 8px 80px 8px 80px;
 
-  @include flex(flex, center, center);
-  gap: 194px;
+    @include flex(flex, space-between, center);
+  }
 }
 
-.header--home {
-  @include flex(flex, center, center);
-  gap: 194px;
+.header--color {
+  background-color: $primary;
 }
 
 .header_wrapp {
-  @include flex(flex, center, center);
-  gap: 16px;
+  @include mq(desktop) {
+    @include flex(flex, center, center);
+    gap: 194px;
+    margin-left: 194px;
+  }
 }

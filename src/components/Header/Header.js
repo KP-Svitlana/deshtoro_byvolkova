@@ -14,13 +14,14 @@ export const Header = () => {
   const isHome = pathname === "/";
 
   return (
-    <header className={isHome ? "container header--home" : "container header"}>
+    <header
+      className={isHome ? "container header" : "container header header--color"}>
       <LogoSwitcherImg logo_desktop={logo_desktop} logo_mobile={logo_mobile} />
-      <Navigate />
       <div className="header_wrapp">
+        <Navigate />
         <LangSwitcher />
-        <Button text={"Зв'язатися"} isErrow={false} type={"button"} />
       </div>
+      <Button text={"Зв'язатися"} isErrow={false} type={"button"} />
     </header>
   );
 };
