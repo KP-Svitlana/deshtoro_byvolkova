@@ -485,22 +485,36 @@ body {
   pointer-events: none;
 }
 
-.hero_titleWrap {
-  position: absolute;
-  top: 375px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media screen and (min-width: 375px) {
+  .hero_titleWrap {
+    position: absolute;
+    top: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_titleWrap {
+    top: 375px;
+  }
 }
 
-.hero_title {
-  color: #F5F7FA;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 120%;
-  letter-spacing: 0;
-  font-family: var(--font-markScript);
+@media screen and (min-width: 375px) {
+  .hero_title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #F5F7FA;
+    font-family: var(--font-markScript);
+  }
+}
+@media (min-width: 1440px) {
+  .hero_title {
+    font-size: 56px;
+  }
 }
 
 .footer {

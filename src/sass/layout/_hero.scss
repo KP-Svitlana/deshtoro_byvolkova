@@ -1,6 +1,6 @@
 .hero {
   position: absolute;
- 
+
   z-index: -1;
 
   @include flex(flex, center, center);
@@ -18,7 +18,7 @@
   @include mq(desktop) {
     width: 1440px;
 
-     top: -96px;
+    top: -96px;
   }
 }
 
@@ -43,20 +43,27 @@
 }
 
 .hero_titleWrap {
-  position: absolute;
-  // top: 517px;
-  top: 375px;
+  @include mq(mobile) {
+    position: absolute;
+    top: 168px;
 
-  @include flex(flex, center, center);
-  flex-direction: column;
+    @include flex(flex, center, center);
+    flex-direction: column;
+  }
+  @include mq(desktop) {
+    // top: 517px;
+    top: 375px;
+  }
 }
 
 .hero_title {
-  color: $white;
-  @include font(400, 56px, 120%, 0);
-  font-family: var(--font-markScript);
-}
+  @include mq(mobile) {
+    @include font(400, 28px, 120%, 0);
+    color: $white;
+    font-family: var(--font-markScript);
+  }
 
-// .hero_video {
-//   background-color: #1818187A;
-// }
+  @include mq(desktop) {
+    font-size: 56px;
+  }
+}
