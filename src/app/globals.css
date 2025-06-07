@@ -169,6 +169,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 16px;
+    z-index: 1;
   }
 }
 @media (min-width: 1440px) {
@@ -285,6 +286,12 @@ body {
   border: 1px solid #E5E0D6;
   border-radius: 4px;
   padding: 8px;
+}
+
+@media screen and (min-width: 375px) {
+  .header_nav {
+    display: flex;
+  }
 }
 
 .section_about {

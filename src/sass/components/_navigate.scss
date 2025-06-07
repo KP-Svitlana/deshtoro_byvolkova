@@ -4,6 +4,7 @@
         @include flex(flex, center, center);
         flex-direction: column;
         gap: 16px;
+        z-index: 1;
     }
 
     @include mq(desktop) {
