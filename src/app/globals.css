@@ -488,7 +488,7 @@ body {
 @media screen and (min-width: 375px) {
   .hero_titleWrap {
     position: absolute;
-    top: 168px;
+    top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,6 +498,7 @@ body {
 @media (min-width: 1440px) {
   .hero_titleWrap {
     top: 375px;
+    gap: 40px;
   }
 }
 
@@ -506,13 +507,16 @@ body {
     font-weight: 400;
     font-size: 28px;
     line-height: 120%;
-    letter-spacing: 0;
+    letter-spacing: -1px;
     color: #F5F7FA;
     font-family: var(--font-markScript);
+    padding: 0 16px 0 16px;
+    text-align: center;
   }
 }
 @media (min-width: 1440px) {
   .hero_title {
+    padding: 0;
     font-size: 56px;
   }
 }

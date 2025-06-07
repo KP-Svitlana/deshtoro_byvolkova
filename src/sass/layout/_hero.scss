@@ -45,25 +45,32 @@
 .hero_titleWrap {
   @include mq(mobile) {
     position: absolute;
-    top: 168px;
+    // top: 168px;
+    top: 50px;
+    
 
     @include flex(flex, center, center);
     flex-direction: column;
+    // gap: 24px;
   }
   @include mq(desktop) {
     // top: 517px;
     top: 375px;
+    gap: 40px;
   }
 }
 
 .hero_title {
   @include mq(mobile) {
-    @include font(400, 28px, 120%, 0);
+    @include font(400, 28px, 120%, -1px);
     color: $white;
     font-family: var(--font-markScript);
+    padding: 0 16px 0 16px;
+    text-align: center;
   }
 
   @include mq(desktop) {
+    padding: 0;
     font-size: 56px;
   }
 }
