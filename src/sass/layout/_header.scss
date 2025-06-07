@@ -29,7 +29,8 @@
 }
 
 .header_wrapp.open {
-  @include flex(flex, center, center);
+  @include mq(mobile) {
+ @include flex(flex, center, center);
   flex-direction: column;
   padding: 16px;
   background-color: $primary;
@@ -38,6 +39,8 @@
   top: 56px;
   left: 206px;
   z-index: 1;
+  }
+ 
 }
 
 .mobileIcon_wrapp {

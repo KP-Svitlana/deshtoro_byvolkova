@@ -33,6 +33,10 @@ button {
   background-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -270,17 +274,19 @@ body {
   }
 }
 
-.header_wrapp.open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 16px;
-  background-color: #292D3F;
-  position: absolute;
-  top: 56px;
-  left: 206px;
-  z-index: 1;
+@media screen and (min-width: 375px) {
+  .header_wrapp.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #292D3F;
+    position: absolute;
+    top: 56px;
+    left: 206px;
+    z-index: 1;
+  }
 }
 
 .mobileIcon_wrapp {

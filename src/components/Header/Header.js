@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 import { Button } from "../Button";
 import { LangSwitcher } from "../LangSwitcher";
@@ -14,6 +15,7 @@ import logo_mobile from "@/accets/svg/logo_header_mobile.png";
 import menu_mobile from "@/accets/svg/header_mobile_menu.svg";
 import phone_mobile from "@/accets/svg/header_mobile_phone.svg";
 import close_mobile from "@/accets/svg/header_mobile_close.svg";
+
 
 export const Header = () => {
   const pathname = usePathname();
@@ -51,11 +53,11 @@ export const Header = () => {
             className={menuOpen ? "close_icon" : "menu_icon"}
           />
         </button>
-        <button className="phone_icon" type="button">
+        <Link className="phone_icon" type="button" href="#footer">
           <Image src={phone_mobile} alt={"phone icon"} width={24} height={24} />
-        </button>
+        </Link>
       </div>
-      <Button text={"Зв'язатися"} isErrow={false} type={"button"} />
+      <Button text={"Зв'язатися"} isErrow={false} path={"#footer"} type={"button"} />
     </header>
   );
 };
