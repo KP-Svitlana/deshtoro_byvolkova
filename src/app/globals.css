@@ -169,7 +169,6 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 16px;
-    z-index: 1;
   }
 }
 @media (min-width: 1440px) {
@@ -240,6 +239,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 }
 @media (min-width: 1440px) {
@@ -270,6 +270,19 @@ body {
   }
 }
 
+.header_wrapp.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #292D3F;
+  position: absolute;
+  top: 56px;
+  left: 206px;
+  z-index: 1;
+}
+
 .mobileIcon_wrapp {
   display: flex;
   justify-content: center;
@@ -288,10 +301,12 @@ body {
   padding: 8px;
 }
 
-@media screen and (min-width: 375px) {
-  .header_nav {
-    display: flex;
-  }
+.close_icon {
+  display: flex;
+}
+
+.menu_icon {
+  display: none;
 }
 
 .section_about {
