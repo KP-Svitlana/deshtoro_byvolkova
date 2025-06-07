@@ -8,7 +8,7 @@ import logo_mobile from "@/accets/svg/logo_header_mobile.png";
 
 export const Footer = () => {
   return (
-    <footer className="footer container">
+    <footer className="footer container" id="footer">
       <div className="footer_wrap">
         <h2 className="footer_title">
           Оформимо ваш інтер’єр із бездоганним стилем

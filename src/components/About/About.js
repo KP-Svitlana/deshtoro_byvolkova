@@ -9,18 +9,18 @@ export const About = () => {
     <section className="section container section_about">
       <h1 className="section_title">про нас</h1>
       <ul className="about_list">
-        <li className="about_item">
+        <li className="about_item" key={"style"}>
           <p>Стиль</p>
         </li>
-        <li className="about_item">
+        <li className="about_item" key={"quality"}>
           <p>Якість</p>
         </li>
-        <li className="about_item">
+        <li className="about_item" key={"premium"}>
           <p>Преміальність</p>
         </li>
       </ul>
       <ul className="about_photolist">
-        <li className="photolist_item">
+        <li className="photolist_item" key={"1"}>
           <Image
             src={about1}
             alt="штора"
@@ -30,7 +30,7 @@ export const About = () => {
             priority={true}
           />
         </li>
-        <li className="photolist_item">
+        <li className="photolist_item" key={"2"}>
           <Image
             src={about2}
             alt="тканина"
