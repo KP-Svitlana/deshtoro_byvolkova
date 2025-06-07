@@ -1,6 +1,8 @@
 .header {
   @include mq(mobile) {
     @include flex(flex, space-between, center);
+
+    position: relative;
   }
   @include mq(desktop) {
     padding: 8px 80px 8px 80px;
@@ -26,6 +28,18 @@
   }
 }
 
+.header_wrapp.open {
+  @include flex(flex, center, center);
+  flex-direction: column;
+  padding: 16px;
+  background-color: $primary;
+
+  position: absolute;
+  top: 56px;
+  left: 206px;
+  z-index: 1;
+}
+
 .mobileIcon_wrapp {
   @include flex(flex, center, center);
   gap: 16px;
@@ -41,12 +55,15 @@
   padding: 8px;
 }
 
-// .header_nav {
-//   @include mq(mobile) {
-//     display: none;
-//   }
+.close_icon{
+display: flex;
+}
 
-//   @include mq(desktop) {
-//     display: flex;
-//   }
+.menu_icon{
+  display: none;
+}
+
+// .header_nav {
+//  background-color: $primary;
+  
 // }
