@@ -26,7 +26,7 @@
 
 .about_item {
   @include mq(mobile) {
-    @include font(300, 44px, 150%, 0);
+    @include font(400, 44px, 150%, 0);
   }
 
   @include mq(desktop) {
@@ -39,7 +39,6 @@
 .about_item:nth-child(1) {
   @include mq(mobile-only) {
     font-size: 32px;
-    font-weight: 300;
     margin-right: 90px;
   }
 }
@@ -57,6 +56,8 @@
 .about_item:nth-child(3) {
   @include mq(mobile-only) {
     font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1px;
   }
   @include mq(desktop) {
     margin-left: 217px;
