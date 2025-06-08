@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Button } from "../Button";
 
-import about2 from "@/accets/img/about1_x3_desktop.jpg";
-import about1 from "@/accets/img/about2_x3_desktop.jpg";
+import about1 from "@/accets/img/about1_x3_desktop.jpg";
+import about2 from "@/accets/img/about2_x3_desktop.jpg";
 
 export const About = () => {
   return (
