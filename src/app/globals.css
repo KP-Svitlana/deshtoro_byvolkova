@@ -353,7 +353,7 @@ body {
 }
 @media screen and (min-width: 375px) {
   .about_item {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 44px;
     line-height: 150%;
     letter-spacing: 0;
@@ -371,7 +371,6 @@ body {
 @media screen and (max-width: 767.98px) {
   .about_item:nth-child(1) {
     font-size: 32px;
-    font-weight: 300;
     margin-right: 90px;
   }
 }
@@ -390,6 +389,8 @@ body {
 @media screen and (max-width: 767.98px) {
   .about_item:nth-child(3) {
     font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -1px;
   }
 }
 @media (min-width: 1440px) {
