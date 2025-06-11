@@ -698,4 +698,15 @@ body {
     margin-right: 18px;
     position: static;
   }
+}
+
+@media screen and (min-width: 375px) {
+  .aboutUs_section {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .aboutUs_section {
+    margin-top: 80px;
+  }
 }/*# sourceMappingURL=globals.css.map */

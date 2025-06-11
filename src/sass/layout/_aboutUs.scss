@@ -1,0 +1,8 @@
+.aboutUs_section {
+  @include mq(mobile) {
+    margin-top: 16px;
+  }
+  @include mq(desktop) {
+    margin-top: 80px;
+  }
+}
