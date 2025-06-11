@@ -46,7 +46,7 @@ export const About = () => {
               сучасного мінімалізму — ми допоможемо обрати найкраще рішення саме
               для вас.
             </p>
-            <Button text="Дізнатися більше" isErrow={true} path="about" />
+            <Button text="Дізнатися більше" isErrow={true} path="aboutUs" />
           </div>
         </li>
       </ul>
