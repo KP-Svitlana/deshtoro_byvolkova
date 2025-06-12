@@ -89,9 +89,11 @@
 }
 
 .aboutUs_item:nth-child(2) .aboutUs_text {
-  position: absolute;
-  top: 112px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 112px;
+    left: 652px;
+  }
 }
 
 .aboutUs_item:nth-child(3) {
@@ -110,9 +112,11 @@
 }
 
 .aboutUs_item:nth-child(3) .aboutUs_text {
-  position: absolute;
-  top: 224px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 224px;
+    left: 652px;
+  }
 }
 
 .aboutUs_item:nth-child(4) {
@@ -131,9 +135,11 @@
 }
 
 .aboutUs_item:nth-child(4) .aboutUs_text {
-  position: absolute;
-  top: 336px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 336px;
+    left: 652px;
+  }
 }
 
 .aboutUs_item:nth-child(5) {
@@ -151,9 +157,11 @@
 }
 
 .aboutUs_item:nth-child(5) .aboutUs_text {
-  position: absolute;
-  top: 384px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 384px;
+    left: 652px;
+  }
 }
 
 .aboutUs_item:nth-child(6) {
@@ -172,9 +180,11 @@
 }
 
 .aboutUs_item:nth-child(6) .aboutUs_text {
-  position: absolute;
-  top: 448px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 448px;
+    left: 652px;
+  }
 }
 
 .aboutUs_item:nth-child(7) {
@@ -192,7 +202,9 @@
 }
 
 .aboutUs_item:nth-child(7) .aboutUs_text {
-  position: absolute;
-  top: 560px;
-  left: 652px;
+  @include mq(desktop) {
+    position: absolute;
+    top: 560px;
+    left: 652px;
+  }
 }
