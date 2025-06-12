@@ -1,8 +1,8 @@
 import photo1 from "@/accets/img/aboutUs_x3_photo1.jpg";
-import photo2 from "@/accets/img/aboutUs_x3_photo2.jpg";
-import photo3 from "@/accets/img/aboutUs_x3_photo3.jpg";
-import photo4 from "@/accets/img/aboutUs_x3_photo4.jpg";
-import photo5 from "@/accets/img/aboutUs_x3_photo5.jpg";
+import photo4 from "@/accets/img/aboutUs_x3_photo2.jpg";
+import photo2 from "@/accets/img/aboutUs_x3_photo3.jpg";
+import photo5 from "@/accets/img/aboutUs_x3_photo4.jpg";
+import photo3 from "@/accets/img/aboutUs_x3_photo5.jpg";
 import photo6 from "@/accets/img/aboutUs_x3_photo6.jpg";
 import photo7 from "@/accets/img/aboutUs_x3_photo7.jpg";
 

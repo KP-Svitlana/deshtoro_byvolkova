@@ -5,12 +5,12 @@ import { aboutUsData } from "@/constants";
 
 export default function AboutUs() {
   return (
-    <main>
+   
       <section className="container aboutUs_section">
-        <ul>
+        <ul className="aboutUs_list">
           {aboutUsData.map((item) => {
             return (
-              <li key={item.label} >
+              <li key={item.label} className="aboutUs_item">
                 <Image src={item.src} alt={item.label} className="aboutUs_img"/>
                 <p className="aboutUs_text">{item.text}</p>
               </li>
@@ -19,6 +19,6 @@ export default function AboutUs() {
         </ul>
         
       </section>
-    </main>
+   
   );
 }

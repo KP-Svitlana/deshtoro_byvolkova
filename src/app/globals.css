@@ -703,10 +703,54 @@ body {
 @media screen and (min-width: 375px) {
   .aboutUs_section {
     margin-top: 16px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1440px) {
   .aboutUs_section {
     margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .aboutUs_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .aboutUs_item {
+    width: 343px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.aboutUs_img {
+  border-radius: 16px;
+  width: 100%;
+}
+@media screen and (min-width: 375px) {
+  .aboutUs_img {
+    height: 304px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .aboutUs_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
   }
 }/*# sourceMappingURL=globals.css.map */

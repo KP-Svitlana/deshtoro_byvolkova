@@ -1,8 +1,69 @@
 .aboutUs_section {
   @include mq(mobile) {
     margin-top: 16px;
+    margin-bottom: 40px;
   }
   @include mq(desktop) {
     margin-top: 80px;
+    margin-bottom: 100px;
   }
 }
+
+.aboutUs_list {
+  @include mq(mobile) {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.aboutUs_item {
+  @include mq(mobile) {
+    width: 343px;
+
+    @include flex(flex, center, center);
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.aboutUs_img {
+  border-radius: 16px;
+  width: 100%;
+
+  @include mq(mobile) {
+    height: 304px;
+    object-fit: cover;
+  }
+}
+
+.aboutUs_text {
+  @include mq(mobile) {
+    @include font(400, 16px, 150%, 0);
+  }
+}
+
+// .aboutUs_item:nth-child(1) {
+//   order: 5;
+// }
+// .aboutUs_item:nth-child(2) {
+//   order: 4;
+// }
+// .aboutUs_item:nth-child(3) {
+//   order: 2;
+// }
+// .aboutUs_item:nth-child(4) {
+//   order: 3;
+// }
+
+// .aboutUs_item:nth-child(5) {
+//   order: 5;
+// }
+
+// .aboutUs_item:nth-child(6){
+//   order: 6;
+// }
+
+// .aboutUs_item:nth-child(7) {
+//   order: 7;
+// }
