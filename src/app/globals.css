@@ -771,6 +771,13 @@ body {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0;
+    text-align: start;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .aboutUs_text {
+    width: initial;
   }
 }
 
