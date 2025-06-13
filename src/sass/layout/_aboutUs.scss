@@ -57,6 +57,12 @@
 .aboutUs_text {
   @include mq(mobile) {
     @include font(400, 16px, 150%, 0);
+    text-align: start;
+    width: 100%;
+  }
+
+  @include mq(desktop) {
+    width: initial;
   }
 }
 
@@ -165,6 +171,7 @@
 }
 
 .aboutUs_item:nth-child(6) {
+ 
   @include mq(desktop) {
     width: 410px;
     margin-left: 109px;
