@@ -728,8 +728,10 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_list {
     justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0 132px;
   }
 }
 
@@ -798,6 +800,7 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_item:nth-child(2) {
     width: 628px;
+    margin-top: 40px;
     order: 3;
   }
 }
@@ -821,7 +824,8 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_item:nth-child(3) {
     width: 628px;
-    margin-right: 108px;
+    margin-top: 78px;
+    margin-right: 109px;
     order: 5;
   }
 }
@@ -846,6 +850,7 @@ body {
   .aboutUs_item:nth-child(4) {
     width: 410px;
     margin-left: 109px;
+    margin-top: 200px;
     order: 2;
   }
 }
@@ -869,6 +874,7 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_item:nth-child(5) {
     width: 411px;
+    margin-top: 100px;
     order: 4;
   }
 }
@@ -892,6 +898,7 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_item:nth-child(6) {
     width: 410px;
+    margin-top: 100px;
     margin-left: 109px;
     order: 6;
   }
@@ -916,6 +923,8 @@ body {
 @media (min-width: 1440px) {
   .aboutUs_item:nth-child(7) {
     width: 411px;
+    margin-top: 17px;
+    margin-right: 109px;
     order: 7;
   }
 }
