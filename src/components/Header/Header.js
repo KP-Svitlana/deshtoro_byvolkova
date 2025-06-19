@@ -16,7 +16,6 @@ import menu_mobile from "@/accets/svg/header_mobile_menu.svg";
 import phone_mobile from "@/accets/svg/header_mobile_phone.svg";
 import close_mobile from "@/accets/svg/header_mobile_close.svg";
 
-
 export const Header = () => {
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -27,8 +26,9 @@ export const Header = () => {
       className={isHome ? "container header" : "container header header--color"}
     >
       <LogoSwitcherImg logo_desktop={logo_desktop} logo_mobile={logo_mobile} />
+
       <div className={menuOpen ? "open header_wrapp" : "header_wrapp"}>
-        <Navigate className={"header_nav"} />
+        <Navigate  />
         <LangSwitcher />
       </div>
       <div className="mobileIcon_wrapp">
@@ -57,7 +57,12 @@ export const Header = () => {
           <Image src={phone_mobile} alt={"phone icon"} width={24} height={24} />
         </Link>
       </div>
-      <Button text={"Зв'язатися"} isErrow={false} path={"#footer"} type={"button"} />
+      <Button
+        text={"Зв'язатися"}
+        isErrow={false}
+        path={"#footer"}
+        type={"button"}
+      />
     </header>
   );
 };

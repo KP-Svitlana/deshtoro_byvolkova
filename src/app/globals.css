@@ -183,6 +183,7 @@ body {
 
 .nav_item {
   padding: 10px 16px;
+  cursor: pointer;
 }
 
 .navLink {
