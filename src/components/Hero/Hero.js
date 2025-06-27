@@ -2,7 +2,7 @@ import Video from "next-video";
 
 import { LogoSwitcherImg } from "../LogoSwitcherImg";
 
-import myVideo from "../../../videos/mov_hero_desktop.mp4.json";
+import myVideo from "../../../videos/mov_hero_desktop.mov.json";
 
 import name_desktop from "@/accets/svg/name_hero_desktop.svg";
 import name_mobile from "@/accets/svg/name_hero_mobile.svg";
