@@ -1006,4 +1006,7 @@ body {
     line-height: 150%;
     letter-spacing: 0;
   }
+}
+.ourProjects_item .button_link:hover {
+  font-weight: 600;
 }/*# sourceMappingURL=globals.css.map */
