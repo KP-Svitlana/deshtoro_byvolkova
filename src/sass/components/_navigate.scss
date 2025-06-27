@@ -1,20 +1,18 @@
 .nav_list {
+  @include mq(mobile) {
+    @include flex(flex, center, center);
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    @include mq(mobile) {
-        @include flex(flex, center, center);
-        flex-direction: column;
-        gap: 16px;
-        
-    }
-
-    @include mq(desktop) {
-        flex-direction: row;
-    }
- 
+  @include mq(desktop) {
+    flex-direction: row;
+  }
 }
 
 .nav_item {
   padding: 10px 16px;
+  cursor: pointer;
 }
 
 .navLink {
