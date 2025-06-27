@@ -1,0 +1,48 @@
+.ourProjects_section {
+  @include flex(flex, center, center);
+  flex-direction: column;
+
+  @include mq(desktop) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    gap: 140px;
+  }
+}
+
+.ourProjects_text {
+  @include mq(desktop) {
+    padding-left: 217px;
+    padding-right: 217px;
+
+    font-family: var(--font-markScript);
+    @include font(400, 43px, 120%, -2px);
+    color: $black;
+  }
+}
+
+.ourProjects_list {
+  width: 100%;
+
+  @include flex(flex, flex-start, flex-start);
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ourProjects_item {
+  height: 82px;
+  padding: 8px 21px 8px 16px;
+  width: 100%;
+  @include flex(flex, flex-start, center);
+}
+
+.ourProjects_item .button_link {
+  font-family: var(--font-poppins);
+  text-transform: none;
+  width: calc((100% - 8px) / 2);
+  @include flex(flex, space-between, center);
+
+  @include mq(desktop) {
+    @include font(400, 44px, 150%, 0);
+  }
+}

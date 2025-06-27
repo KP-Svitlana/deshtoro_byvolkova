@@ -944,4 +944,66 @@ body {
     top: 560px;
     left: 652px;
   }
+}
+
+.ourProjects_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .ourProjects_section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ourProjects_text {
+    padding-left: 217px;
+    padding-right: 217px;
+    font-family: var(--font-markScript);
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 120%;
+    letter-spacing: -2px;
+    color: #181818;
+  }
+}
+
+.ourProjects_list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ourProjects_item {
+  height: 82px;
+  padding: 8px 21px 8px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ourProjects_item .button_link {
+  font-family: var(--font-poppins);
+  text-transform: none;
+  width: calc((100% - 8px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .ourProjects_item .button_link {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 150%;
+    letter-spacing: 0;
+  }
 }/*# sourceMappingURL=globals.css.map */
