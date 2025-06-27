@@ -45,4 +45,7 @@
   @include mq(desktop) {
     @include font(400, 44px, 150%, 0);
   }
+  &:hover {
+    font-weight: 600;
+  }
 }

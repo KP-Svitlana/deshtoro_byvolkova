@@ -12,7 +12,7 @@ export default function Ourprojects() {
         {ourProjectsData.map((item) => {
           return (
             <li key={item.label} className="ourProjects_item">
-              <Button text={item.label} isErrow={true} path={item.href} />
+              <Button text={item.label} isErrow={true} isErrowBig={true} path={item.href} />
             </li>
           );
         })}
