@@ -952,6 +952,13 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 375px) {
+  .ourProjects_section {
+    margin-top: 40px;
+    margin-bottom: 56px;
+    gap: 56px;
+  }
+}
 @media (min-width: 1440px) {
   .ourProjects_section {
     margin-top: 100px;
@@ -960,16 +967,26 @@ body {
   }
 }
 
+.ourProjects_text {
+  font-family: var(--font-markScript);
+  color: #181818;
+}
+@media screen and (min-width: 375px) {
+  .ourProjects_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
 @media (min-width: 1440px) {
   .ourProjects_text {
     padding-left: 217px;
     padding-right: 217px;
-    font-family: var(--font-markScript);
-    font-weight: 400;
     font-size: 43px;
-    line-height: 120%;
     letter-spacing: -2px;
-    color: #181818;
+    text-align: start;
   }
 }
 
@@ -983,21 +1000,35 @@ body {
 }
 
 .ourProjects_item {
-  height: 82px;
-  padding: 8px 21px 8px 16px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (min-width: 375px) {
+  .ourProjects_item {
+    padding: 8px 14px 8px 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .ourProjects_item {
+    height: 82px;
+    padding: 8px 21px 8px 16px;
+  }
+}
 
 .ourProjects_item .button_link {
   font-family: var(--font-poppins);
   text-transform: none;
-  width: calc((100% - 8px) / 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .ourProjects_item .button_link {
+    width: calc(100% - 16px);
+    height: 36px;
+  }
 }
 @media (min-width: 1440px) {
   .ourProjects_item .button_link {
@@ -1005,8 +1036,22 @@ body {
     font-size: 44px;
     line-height: 150%;
     letter-spacing: 0;
+    width: calc((100% - 8px) / 2);
   }
 }
 .ourProjects_item .button_link:hover {
   font-weight: 600;
+}
+
+@media screen and (min-width: 375px) {
+  .button_link img {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .button_link img {
+    height: auto;
+    width: auto;
+  }
 }/*# sourceMappingURL=globals.css.map */
