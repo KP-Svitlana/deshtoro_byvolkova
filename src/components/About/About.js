@@ -7,7 +7,7 @@ import about2 from "@/accets/img/about2_x3_desktop.jpg";
 export const About = () => {
   return (
     <section className="section container section_about">
-      <h1 className="section_title">про нас</h1>
+      <h2 className="section_title">про нас</h2>
       <ul className="about_list">
         <li className="about_item" key={"style"}>
           <p>Стиль</p>
