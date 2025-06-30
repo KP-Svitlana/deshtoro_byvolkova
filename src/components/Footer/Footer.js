@@ -1,7 +1,7 @@
 import Form from "next/form";
 import { Navigate } from "../Navigate";
 import { SocMediaLinks } from "../SocMediaLinks";
-import { LogoSwitcherImg } from "../LogoSwitcherImg";
+import { ImgSwitcher } from "../ImgSwitcher";
 
 import logo_desktop from "@/accets/svg/logo_header_desktop.png";
 import logo_mobile from "@/accets/svg/logo_header_mobile.png";
@@ -34,9 +34,10 @@ export const Footer = () => {
         </Form>
       </div>
       <div className="footer_navWrap">
-        <LogoSwitcherImg
-          logo_desktop={logo_desktop}
-          logo_mobile={logo_mobile}
+        <ImgSwitcher
+          img_desktop={logo_desktop}
+          img_mobile={logo_mobile}
+          alt={"логотип"}
           className={"footer_logo"}
         />
         <Navigate />

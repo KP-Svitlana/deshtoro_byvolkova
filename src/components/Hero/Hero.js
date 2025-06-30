@@ -1,6 +1,6 @@
 import Video from "next-video";
 
-import { LogoSwitcherImg } from "../LogoSwitcherImg";
+import { ImgSwitcher } from "../ImgSwitcher";
 
 import myVideo from "../../../videos/mov_hero_desktop.mov.json";
 
@@ -24,9 +24,11 @@ export const Hero = () => {
       </div>
 
       <div className="hero_titleWrap">
-        <LogoSwitcherImg
-          logo_desktop={name_desktop}
-          logo_mobile={name_mobile}
+        <ImgSwitcher
+          img_desktop={name_desktop}
+          img_mobile={name_mobile}
+          alt={"назва компанії"}
+          
         />
         <h1 className="hero_title">
           Індивідуальний дизайн штор для вашого дому

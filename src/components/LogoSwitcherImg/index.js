@@ -1,1 +1,0 @@
-export {LogoSwitcherImg} from "./LogoSwitcherImg"
