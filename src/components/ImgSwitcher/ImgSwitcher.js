@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const LogoSwitcherImg = ({ logo_desktop, logo_mobile , className }) => {
+export const ImgSwitcher = ({ logo_desktop, logo_mobile , className }) => {
   return (
     <div className={className}>
       <Image src={logo_desktop} alt="логотип" className={"desktop_img"} />

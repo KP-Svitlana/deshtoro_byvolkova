@@ -1,6 +1,6 @@
 import Video from "next-video";
 
-import { LogoSwitcherImg } from "../LogoSwitcherImg";
+import { ImgSwitcher } from "../ImgSwitcher";
 
 import myVideo from "../../../videos/mov_hero_desktop.mov.json";
 
@@ -24,7 +24,7 @@ export const Hero = () => {
       </div>
 
       <div className="hero_titleWrap">
-        <LogoSwitcherImg
+        <ImgSwitcher
           logo_desktop={name_desktop}
           logo_mobile={name_mobile}
         />

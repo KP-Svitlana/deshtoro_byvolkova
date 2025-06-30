@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { ourProjectsData } from "@/constants";
 import { Button } from "../Button";
-import { LogoSwitcherImg } from "../LogoSwitcherImg";
+import { ImgSwitcher } from "../ImgSwitcher";
 
 export const OurProjectsSection = () => {
   return (
@@ -12,7 +12,7 @@ export const OurProjectsSection = () => {
         {ourProjectsData.map((item) => {
           return (
             <li key={item.key} className="ourProjectsSection_item">
-              <LogoSwitcherImg
+              <ImgSwitcher
                 logo_desktop={item.src}
                 logo_mobile={item.src_m}
                 className={"ourProjectsSection_img"}
