@@ -13,9 +13,10 @@ export const OurProjectsSection = () => {
           return (
             <li key={item.key} className="ourProjectsSection_item">
               <ImgSwitcher
-                logo_desktop={item.src}
-                logo_mobile={item.src_m}
+                img_desktop={item.src}
+                img_mobile={item.src_m}
                 className={"ourProjectsSection_img"}
+                alt={item.label}
               />
               <Button
                 type="Button"

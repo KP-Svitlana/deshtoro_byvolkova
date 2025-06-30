@@ -35,8 +35,9 @@ export const Footer = () => {
       </div>
       <div className="footer_navWrap">
         <ImgSwitcher
-          logo_desktop={logo_desktop}
-          logo_mobile={logo_mobile}
+          img_desktop={logo_desktop}
+          img_mobile={logo_mobile}
+          alt={"логотип"}
           className={"footer_logo"}
         />
         <Navigate />

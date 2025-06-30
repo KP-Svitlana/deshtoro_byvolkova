@@ -25,10 +25,15 @@ export const Header = () => {
     <header
       className={isHome ? "container header" : "container header header--color"}
     >
-      <ImgSwitcher logo_desktop={logo_desktop} logo_mobile={logo_mobile} />
+      <ImgSwitcher
+        img_desktop={logo_desktop}
+        img_mobile={logo_mobile}
+        alt={"логотип"}
+        
+      />
 
       <div className={menuOpen ? "open header_wrapp" : "header_wrapp"}>
-        <Navigate  />
+        <Navigate />
         <LangSwitcher />
       </div>
       <div className="mobileIcon_wrapp">

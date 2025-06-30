@@ -25,8 +25,10 @@ export const Hero = () => {
 
       <div className="hero_titleWrap">
         <ImgSwitcher
-          logo_desktop={name_desktop}
-          logo_mobile={name_mobile}
+          img_desktop={name_desktop}
+          img_mobile={name_mobile}
+          alt={"назва компанії"}
+          
         />
         <h1 className="hero_title">
           Індивідуальний дизайн штор для вашого дому
