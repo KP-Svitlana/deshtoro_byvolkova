@@ -10,7 +10,7 @@ export const OurServicesSection = () => {
       <ul className="ourServicesSection_list">
         {ourServicesData.map((item) => {
           return (
-            <li key={item.key} className="ourServicesSection_item">
+            <li key={item.label} className="ourServicesSection_item">
               <Image src={item.src} alt={item.label} className="ourServices_img"/>
               <div className="ourServices_wrap"><h3 className="ourServices_label">{item.label}</h3></div>
               
