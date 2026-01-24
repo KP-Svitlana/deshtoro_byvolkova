@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ourServicesData } from "@/constants";
+import { Slider } from "../Slider";
 
 
 export const OurServicesSection = () => {
@@ -18,6 +19,7 @@ export const OurServicesSection = () => {
           );
         })}
       </ul>
+      <Slider data={ourServicesData}/>
     </section>
   );
 };
