@@ -11,11 +11,11 @@ export const Slider = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
+    setCurrentIndex((prev) => (prev + 1) % data.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
+    setCurrentIndex((prev) => (prev - 1 + data.length) % data.length);
   };
 
   return (
@@ -28,7 +28,7 @@ export const Slider = ({ data }) => {
               key={item.label}
               className={isActive ? "slider_item--active" : "slider_item"}
             >
-              <Image src={item.src} alt={item.label} className="slider_img"/>
+              <Image src={item.src} alt={item.label} className="slider_img" />
               <div className="sliderLabel_wrap">
                 <h3 className="slider_label">{item.label}</h3>
               </div>
@@ -36,12 +36,14 @@ export const Slider = ({ data }) => {
           );
         })}
       </div>
-      <button onClick={prevSlide}>
-        <Image src={arrowLeft} alt="left arrow" />
-      </button>
-      <button onClick={nextSlide}>
-        <Image src={arrowRight} alt="right arrow" />
-      </button>
+      <div className="slider_buttons">
+        <button onClick={prevSlide}>
+          <Image src={arrowLeft} alt="left arrow" />
+        </button>
+        <button onClick={nextSlide}>
+          <Image src={arrowRight} alt="right arrow" />
+        </button>
+      </div>
     </div>
   );
 };

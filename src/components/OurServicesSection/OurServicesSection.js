@@ -6,8 +6,8 @@ import { Slider } from "../Slider";
 export const OurServicesSection = () => {
   return (
     <section className="container section">
+      <h2 className="section_title">наші послуги</h2>
       <div className="ourServicesSection_section">
-        <h2 className="section_title">наші послуги</h2>
         <ul className="ourServicesSection_list">
           {ourServicesData.map((item) => {
             return (
@@ -27,6 +27,7 @@ export const OurServicesSection = () => {
       </div>
 
       <Slider data={ourServicesData} />
+      
     </section>
   );
 };
