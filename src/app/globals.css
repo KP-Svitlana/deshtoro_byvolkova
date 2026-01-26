@@ -239,6 +239,12 @@ body {
   }
 }
 
+.slider_img {
+  width: 302px;
+  height: 424px;
+  border-radius: 16px;
+}
+
 @media screen and (min-width: 375px) {
   .header {
     display: flex;

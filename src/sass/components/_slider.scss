@@ -1,0 +1,38 @@
+// .slider_container {
+// //   @include mq(mobile) {
+// //     display: block;
+// //   }
+// //   @include mq(desktop) {
+// //     display: none;
+// //   }
+// }
+
+// .slider {
+// }
+
+// .slider_item--active {
+//   @include flex(flex, center, center);
+//   flex-direction: column;
+//   gap: 24px;
+// }
+
+// .slider_item {
+//   display: none;
+// }
+
+.slider_img {
+  width: 302px;
+  height: 424px;
+  border-radius: 16px;
+}
+
+// // .sliderLabel_wrap {
+// //   @include flex(flex, center, center);
+// //   height: 48px;
+// // }
+
+// .slider_label {
+//   @include font(500, 16px, 150%, 0);
+//   text-transform: uppercase;
+//   color: $black;
+// }
