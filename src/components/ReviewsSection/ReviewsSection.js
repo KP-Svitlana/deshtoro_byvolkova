@@ -25,19 +25,20 @@ export const ReviewsSection = () => {
   return (
     <section className="section container">
       <h2 className="section_title">що кажуть наші клієнти</h2>
-      <div className="reviewsSlider">
+      <div className="reviewsSlider_list">
         {reviewsData.map((item, index) => {
           const isActive = index === currentIndex;
           return (
             <div
               key={index}
-              className={isActive ? "slider_item--active" : "slider_item"}
+              className={isActive ? "reviewsSlider_item--active" : "reviewsSlider_item"}
             >
               <ImgSwitcher
                 img_desktop={item.src}
                 img_mobile={item.src_m}
                 className={"reviewsSlider_img"}
                 alt={"фото відгука"}
+                style={{objectFit: "contain"}}
               />
 
               <div className="reviewsSliderText_wrap">
