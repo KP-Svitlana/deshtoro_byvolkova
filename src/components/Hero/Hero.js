@@ -1,8 +1,11 @@
-import Video from "next-video";
+// import Video from "next-video";
+import BackgroundVideo from 'next-video/background-video';
 
 import { ImgSwitcher } from "../ImgSwitcher";
 
-import myVideo from "../../../videos/mov_hero_desktop.mov.json";
+// import myVideo from "../../../videos/mov_hero_desktop.mov.json";
+
+import myVideo from "../../../videos/hero_video_desktop.mp4.json";
 
 import name_desktop from "@/accets/svg/name_hero_desktop.svg";
 import name_mobile from "@/accets/svg/name_hero_mobile.svg";
@@ -11,7 +14,7 @@ export const Hero = () => {
   return (
     <section className="hero">
       <div className="hero_videoWrapper">
-        <Video
+        {/* <Video
           src={myVideo}
           autoplay
           muted
@@ -20,7 +23,8 @@ export const Hero = () => {
           controls={false}
           preload="auto"
           className={"hero_video"}
-        />
+        /> */}
+        <BackgroundVideo src={myVideo}/>
       </div>
 
       <div className="hero_titleWrap">
