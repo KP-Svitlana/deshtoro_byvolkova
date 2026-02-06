@@ -22,7 +22,7 @@ export const Footer = () => {
           унікальне текстильне оформлення вашого інтер’єру.
         </p>
         <Form className="footer_form">
-          <label id="label" className="form_label">Номер телефону</label>
+          <label id="label" className="form_label" for="tel">Номер телефону</label>
           <input
             className="form_input"
             id="tel"
