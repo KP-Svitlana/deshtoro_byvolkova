@@ -22,15 +22,18 @@ export const Footer = () => {
           унікальне текстильне оформлення вашого інтер’єру.
         </p>
         <Form className="footer_form">
-          <label className="form_label">Номер телефону</label>
-          <input
+          <label id="label" className="form_label" for="tel">Номер телефону</label>
+          <div className="form_inputsWrap">
+            <input
             className="form_input"
             id="tel"
             type="tel"
             name="tel"
             placeholder="Введіть номер"
           ></input>
-          <input className="form_btn" type="submit" value="Надіслати" />
+          <input id="btn" className="form_btn" type="submit" value="Надіслати" />
+          </div>
+          
         </Form>
       </div>
       <div className="footer_navWrap">
