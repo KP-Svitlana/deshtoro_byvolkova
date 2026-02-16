@@ -57,7 +57,7 @@ export const ReviewsSection = () => {
           <Image src={arrowRight} alt="right arrow" />
         </button>
       </div>
-      ;
+      
     </section>
   );
 };
