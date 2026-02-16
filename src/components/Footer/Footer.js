@@ -23,7 +23,8 @@ export const Footer = () => {
         </p>
         <Form className="footer_form">
           <label id="label" className="form_label" for="tel">Номер телефону</label>
-          <input
+          <div className="form_inputsWrap">
+            <input
             className="form_input"
             id="tel"
             type="tel"
@@ -31,6 +32,8 @@ export const Footer = () => {
             placeholder="Введіть номер"
           ></input>
           <input id="btn" className="form_btn" type="submit" value="Надіслати" />
+          </div>
+          
         </Form>
       </div>
       <div className="footer_navWrap">

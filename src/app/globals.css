@@ -692,9 +692,13 @@ body {
 .footer_form {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  height: 69px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
 }
 
 .form_label {
@@ -703,14 +707,21 @@ body {
   line-height: 150%;
   letter-spacing: 0;
   color: #F5F7FA;
-  position: absolute;
-  top: 0;
-  left: 0;
+}
+
+.form_inputsWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 44px;
 }
 
 .form_input {
   padding: 10px 16px;
-  border: 1px, solid, #F5F7FA;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: #F5F7FA;
   border-radius: 4px 0px 0px 4px;
   font-weight: 400;
   font-size: 16px;
@@ -721,7 +732,6 @@ body {
 
 .form_btn {
   width: 111px;
-  height: 44px;
   padding: 10px 16px;
   background-color: transparent;
   color: #E5E0D6;
